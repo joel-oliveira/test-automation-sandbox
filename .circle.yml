@@ -1,0 +1,7 @@
+jobs:
+  build:
+    docker:
+      - image: circleci/python:latest-browsers
+    steps:
+      - checkout
+      - run: robot .
